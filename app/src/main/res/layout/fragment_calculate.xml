@@ -1,0 +1,143 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Gold Weight (grams)"
+        android:textColorHint="@color/black"
+        android:textColor="@color/lavender"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/valueInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Current Gold Price (RM/gram)"
+        android:textColorHint="@color/black"
+        android:textColor="@color/lavender"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/typeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radioKeep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Keep" />
+
+        <RadioButton
+            android:id="@+id/radioWear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Wear" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Calculate" />
+
+    <TableLayout
+        android:id="@+id/outputTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="1"
+        android:visibility="gone"
+        android:divider="@android:color/darker_gray"
+        android:showDividers="middle"
+        android:dividerHeight="1dp">
+
+    <TableRow>
+        <TextView
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="Value"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/weightText"
+            android:textColor="@color/black"
+            android:text="Gold Weight:" />
+
+        <TextView
+            android:id="@+id/weightValue"
+            android:textColor="@color/lavender"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/valueText"
+            android:textColor="@color/black"
+            android:text="Gold Value per gram:" />
+
+        <TextView
+            android:id="@+id/valueValue"
+            android:textColor="@color/lavender"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/excessText"
+            android:textColor="@color/black"
+            android:text="Excess Weight (after Uruf):" />
+
+        <TextView
+            android:id="@+id/excessValue"
+            android:textColor="@color/lavender"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/zakatPayableText"
+            android:textColor="@color/black"
+            android:text="Zakat Payable Value:" />
+
+        <TextView
+            android:id="@+id/zakatPayableValue"
+            android:textColor="@color/lavender"
+            android:text="" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/totalZakatText"
+            android:textColor="@color/black"
+            android:text="Total Zakat:" />
+
+        <TextView
+            android:id="@+id/totalZakatValue"
+            android:textColor="@color/lavender"
+            android:text="" />
+    </TableRow>
+
+</TableLayout>
+
+    </LinearLayout>

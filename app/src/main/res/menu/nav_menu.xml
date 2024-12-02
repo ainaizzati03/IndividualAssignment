@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <!-- Home -->
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home" />
+
+        <!-- About Me -->
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/baseline_account_circle_24"
+            android:title="About Me" />
+
+        <!-- Calculate Zakat -->
+        <item
+            android:id="@+id/nav_calculate"
+            android:icon="@drawable/baseline_calculate_24"
+            android:title="Calculate Zakat" />
+
+        <!-- Share -->
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@android:drawable/ic_menu_share"
+            android:title="Share"
+            android:showAsAction="ifRoom"/>
+
+    </group>
+
+    <item
+        android:title="">
+    </item>
+
+    <!-- Exit -->
+    <item
+        android:id="@+id/nav_exit"
+        android:icon="@drawable/baseline_exit_to_app_24"
+        android:title="Exit" />
+
+
+</menu>
