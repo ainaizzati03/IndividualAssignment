@@ -73,7 +73,7 @@ public class AboutFragment extends Fragment {
         githubLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/ainaizzati03/IndividualAssignment";
+                String url = "https://github.com/ainaizzati03/ZakatPay";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent); // Launch the browser with the link
             }
