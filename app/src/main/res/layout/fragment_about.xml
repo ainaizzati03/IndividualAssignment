@@ -74,7 +74,7 @@
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
-            <!-- Group -->
+            <!-- Github link -->
             <TextView
                 android:id="@+id/githubLink"
                 android:layout_width="wrap_content"
