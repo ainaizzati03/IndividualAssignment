@@ -1,16 +1,18 @@
 package com.example.zakatpay;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link AboutFragment#newInstance} factory method to
  * create an instance of this fragment.
- *
  */
 public class AboutFragment extends Fragment {
 
@@ -58,6 +60,25 @@ public class AboutFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_about, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_about, container, false);
+
+        // Get the TextView where you want to display the GitHub link
+        TextView githubLink = rootView.findViewById(R.id.githubLink);
+
+        // Set the link text and color
+        githubLink.setText("Click Here to Visit my GitHub !");
+        githubLink.setTextColor(getResources().getColor(R.color.lavender)); // Make sure to define the color blue in your colors.xml
+
+        // Make the link clickable
+        githubLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://github.com/ainaizzati03/IndividualAssignment";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent); // Launch the browser with the link
+            }
+        });
+
+        return rootView;
     }
 }

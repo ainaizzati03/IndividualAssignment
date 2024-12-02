@@ -23,13 +23,13 @@
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="70dp"
                 android:background="@drawable/circle_shadow">
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
                     android:background="@drawable/circle_mask"
                     android:clipToOutline="true"
                     android:contentDescription="Profile Picture"
@@ -73,6 +73,19 @@
                 android:text="Group: 5B"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
+
+            <!-- Group -->
+            <TextView
+                android:id="@+id/githubLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Click Here to Visit my GitHub!"
+                android:textColor="@color/lavender"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true" />
 
             <!-- Copyright Statement -->
             <TextView
